@@ -4,6 +4,7 @@
   - [What is a class?](#what-is-a-class)
   - [Important Terminology](#important-terminology)
   - [Why use classes?](#why-use-classes)
+  - [Access Modifiers](#access-modifiers)
 
 ## What is a class?
 
@@ -55,3 +56,27 @@ class ClassName {
   // define
 }
 ```
+
+## Access Modifiers
+
+There are two types of access modifiers in C++: `public` and `private`. We can use these access modifiers to define the `scope` of our data members and member functions. The question that you might have is why do we need to define the scope of our data members and member functions or why do we need access modifiers in the first place? Before we get to that, let's understand what `scope` means. 
+
+**Scope:** Scope refers to the visibility of a variable or a function. In other words, it refers to the part of the program where a variable or a function can be accessed. For example, if we define a variable `int a = 5;` inside a function `main()`, we can only access it inside the `main()` function. If we try to access it outside the `main()` function, we'll get an error. This is because the scope of the variable `a` is limited to the `main()` function. We can also call it a `local` variable. On the other hand, if we define a variable `int a = 5;` outside the `main()` function, we can access it anywhere in the program. We can also call it a `global` variable. The scope of a global variable is the entire program. Woah! That's a mouthful of words. Nothing to worry, we will dig deeper into these concepts in the upcoming session. 
+
+In C++ or other programming languages like Java, we can impose restrictions on different data members outside the class. The goal, on a broader level, is to keep the data members private since we don't want the users of our application manipulating the data directly without an **interface.** By default, all data members are private in C++ while they are public in Python. Wow! We're promoting security. The question is, how do we make our data secure? In other words, how do I make my data members private?
+
+Let's demonstrate this using a simple example in C++.
+
+```cpp
+class Class1 {
+  int num; // this is by default a private member
+}
+
+class Class2 {
+  private: // we have explicitly defined that whatever variables lie in this indented block would be private and cannot be accessed directly in the main() function.
+    int num;
+}
+```
+
+We can make our data members private using the `private` keyword followed by a colon (`:`). 
+
