@@ -5,6 +5,9 @@
   - [Important Terminology](#important-terminology)
   - [Why use classes?](#why-use-classes)
   - [Access Modifiers](#access-modifiers)
+    - [Private Access Modifier](#private-access-modifier)
+    - [Public Access Modifier](#public-access-modifier)
+    - [Protected Access Modifer](#protected-access-modifer)
 
 ## What is a class?
 
@@ -59,9 +62,11 @@ class ClassName {
 
 ## Access Modifiers
 
-There are two types of access modifiers in C++: `public` and `private`. We can use these access modifiers to define the `scope` of our data members and member functions. The question that you might have is why do we need to define the scope of our data members and member functions or why do we need access modifiers in the first place? Before we get to that, let's understand what `scope` means. 
+There are three types of access modifiers in C++: `public`, `private` and `public`. We can use these access modifiers to define the `scope` of our data members and member functions. The question that you might have is why do we need to define the scope of our data members and member functions or why do we need access modifiers in the first place? Before we get to that, let's understand what `scope` means. 
 
-**Scope:** Scope refers to the visibility of a variable or a function. In other words, it refers to the part of the program where a variable or a function can be accessed. For example, if we define a variable `int a = 5;` inside a function `main()`, we can only access it inside the `main()` function. If we try to access it outside the `main()` function, we'll get an error. This is because the scope of the variable `a` is limited to the `main()` function. We can also call it a `local` variable. On the other hand, if we define a variable `int a = 5;` outside the `main()` function, we can access it anywhere in the program. We can also call it a `global` variable. The scope of a global variable is the entire program. Woah! That's a mouthful of words. Nothing to worry, we will dig deeper into these concepts in the upcoming session. 
+**Scope:** Scope refers to the visibility of a variable or a function. In other words, it refers to the part of the program where a variable or a function can be accessed. For example, if we define a variable `int a = 5;` inside a function `main()`, we can only access it inside the `main()` function. If we try to access it outside the `main()` function, we'll get an error. This is because the scope of the variable `a` is limited to the `main()` function. We can also call it a `local` variable. On the other hand, if we define a variable `int a = 5;` outside the `main()` function, we can access it anywhere in the program. We can also call it a `global` variable. The scope of a global variable is the entire program. Woah! That's a mouthful of words. Nothing to worry, we will dig deeper into these concepts in the upcoming chapters.
+
+### Private Access Modifier
 
 In C++ or other programming languages like Java, we can impose restrictions on different data members outside the class. The goal, on a broader level, is to keep the data members private since we don't want the users of our application manipulating the data directly without an **interface.** By default, all data members are private in C++ while they are public in Python. Wow! We're promoting security. The question is, how do we make our data secure? In other words, how do I make my data members private?
 
@@ -79,4 +84,42 @@ class Class2 {
 ```
 
 We can make our data members private using the `private` keyword followed by a colon (`:`). 
+
+### Public Access Modifier
+
+We can also make our data members public using the `public` keyword followed by a colon (`:`). This means that the data members can be accessed directly in the `main()` function. Strictly, in the OOP terminology, it implies that the data members are accessible outside the class. Let's demonstrate this using a simple example in C++. It's important to understand that the member functions are usually public unless we explicitly define them as private. Before we get to how we declare member functions, let's recall what member functions are. 
+
+**Member Functions:** These are the functions that are used to perform **operations** on the data members. We access both the private and public data members using member functions. Synonymously, these member functions are also called **methods** of a class. Now back to what the public access modifier is and how do we define it in a programming langauge like C++. 
+
+```cpp
+class Class1 {
+
+  private:
+    int num2; // private data member
+
+    void print2() { // private member function
+      cout << num2 << endl;
+    }
+
+  public:
+    int num; // publicly declared data member
+
+    void print() { // publicly declared member function
+      cout << num << endl;
+    }
+}
+
+int main() {
+  Class1 c;
+  c.num = 3; 
+  c.print(); // 3
+
+  c.num2 = 4; // error: 'int Class1::num2' is private within this context
+  c.print2(); // error: 'void Class1::print2()' is private within this context
+
+  cout << c.num << endl; // 3
+}
+```
+
+### Protected Access Modifer
 
