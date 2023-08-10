@@ -36,3 +36,7 @@ Woah! A whole lot of challenging terms. Let's break them down one by one.
 ## Important Terminology
 
 **Data Members:** These are the variables that are used to store the data of the object. In our case, the data members would be `name`, `age`, `gender` and `height`. These are the properties of a person. We can also call them **attributes** of a person.
+
+**Member Functions:** These are the functions that are used to perform operations on the data members. In our case, the member functions would be `walk()`, `talk()` and `eat()`. These are the actions that a person can perform. We can also call them **methods** of a person.
+
+**Object:** An object is an instance of a class. For example, if we have a class `Person`, we can create an object `person1` of that class. This object `person1` will have all the properties and methods of the class `Person`. We can also call it an instance of the class `Person`.
