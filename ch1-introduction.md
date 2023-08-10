@@ -3,6 +3,7 @@
 - [Classes](#classes)
   - [What is a class?](#what-is-a-class)
   - [Important Terminology](#important-terminology)
+  - [Why use classes?](#why-use-classes)
 
 ## What is a class?
 
@@ -40,3 +41,17 @@ Woah! A whole lot of challenging terms. Let's break them down one by one.
 **Member Functions:** These are the functions that are used to perform operations on the data members. In our case, the member functions would be `walk()`, `talk()` and `eat()`. These are the actions that a person can perform. We can also call them **methods** of a person.
 
 **Object:** An object is an instance of a class. For example, if we have a class `Person`, we can create an object `person1` of that class. This object `person1` will have all the properties and methods of the class `Person`. We can also call it an instance of the class `Person`.
+
+## Why use classes?
+
+Object Oriented Paradigm isn't restricted to C++ only. It is a programming paradigm that is used in many programming languages like Java, Python, C#, etc. It is a very powerful paradigm that allows us to create complex programs with ease. It is a very important concept to understand and master. It is used in many real-world applications. For example, if you're creating a game, you can create a class `Player` and create objects of that class to represent the players in the game. If you're creating a banking application, you can create a class `Account` and create objects of that class to represent the accounts of the customers. If you're creating a social media application, you can create a class `User` and create objects of that class to represent the users of the application. The possibilities are endless. You can create as many objects of a class as you want. You can also create multiple classes in a single program. You can also create objects of one class inside another class. We'll be covering all of these concepts in the upcoming sections.
+
+In essence, classes help you compartmentalize the code of an application. Different components would become separate classes which would interact through interfaces. The most significant advantage of using classes is the usability of the code. You can create objects of a class and use them in different parts of the program. Not only that, you can even *import* these classes in other programs and use them there. This is the power of classes.
+
+The question is, how do you define a class in a program? Let's demonstrate this with C++ code.
+
+```cpp
+class ClassName {
+  // define
+}
+```
