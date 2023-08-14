@@ -123,3 +123,24 @@ int main() {
 
 ### Protected Access Modifer
 
+Protected access modifier is a bit tricky to understand. It is used in inheritance. We'll be covering inheritance in the upcoming sections. For now, it is important to understand that protected access modifier is used to make the data members accessible in the derived class. We'll be covering derived classes in the upcoming sections. For now, let's understand that data members with protected access are between private and public. They can be accessed in the derived class but not in the main function. Let's demonstrate this using a simple example in C++.
+
+```cpp
+class Class1 {
+  protected:
+    int num;
+}
+
+class Class2: public Class1 { // Class2 is inherited from Class1 (Don't worry if you don't get this right now)
+  public:
+    void print() {
+      cout << num << endl;
+    }
+}
+
+int main() {
+  Class2 c;
+  c.num = 3; // error: 'int Class1::num' is protected within this context
+  c.print(); // 3
+}
+```
