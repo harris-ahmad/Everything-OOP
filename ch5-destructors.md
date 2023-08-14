@@ -2,7 +2,7 @@
 
 - [Destructors](#destructors)
   - [What is a Destructor?](#what-is-a-destructor)
-    - [Garbage Collection using Destructors](#garbage-collection-using-destructors)
+  - [Garbage Collection using Destructors](#garbage-collection-using-destructors)
 
 ## What is a Destructor?
 
@@ -20,7 +20,7 @@ A destructor specifies all additional operations which need to be performed when
 
 Before we dive into how destructors are used or implemented in code, let's reflect on **garbage collection**. Garbage collection is a form of automatic memory management. The garbage collector, or GC, attempts to reclaim memory that is no longer being used by the program. This is done by searching for objects in memory that are no longer referenced by the program. If an object is no longer referenced, it is assumed that the object is no longer needed and the memory occupied by the object can be reclaimed. This is a very high level explanation of how garbage collection works. If you want to learn more about garbage collection, I recommend reading [this](https://en.wikibooks.org/wiki/C%2B%2B_Programming/Compiler/Linker/Libraries/Garbage_Collection) article.
 
-### Garbage Collection using Destructors
+## Garbage Collection using Destructors
 
 Let's take a look at an example of how destructors are used to implement garbage collection. 
 
