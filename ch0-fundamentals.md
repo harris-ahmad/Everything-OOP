@@ -17,5 +17,5 @@ For a language to be considered **fully** object-oriented, it must support the f
 
 One of the issues that I struggled with when I was first introduced to OO was how do these theoretical concepts relate directly to the **current** design practices, which is always changing. For example, there has always been debate about inheritance. Does inheritance break encapsulation? Even in the modern day, many developers tend to avoid using inheritance in their OO Design. Why? Because it's not always clear how inheritance should be used. Inheritance is a powerful tool, but it can also be a dangerous one. It's easy to misuse inheritance, and it's hard to know when to use it.
 
-Despite of whether you end up using inheritance in your design choices, it's a critical concept to grasp, regardless.
+Despite of whether you end up using inheritance in your design choices, it's a critical concept to grasp.
 
