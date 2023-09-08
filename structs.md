@@ -6,6 +6,7 @@
   - [Structs and Arrays](#structs-and-arrays)
   - [Struct of Structs - Say Hello to Nesting](#struct-of-structs---say-hello-to-nesting)
   - [Practice Problems](#practice-problems)
+  - [Summary](#summary)
 
 ## A gentle introduction to Structs
 
@@ -144,3 +145,76 @@ Strictly in OOP terminology, you've studied something known as **composition**.
 Here's a practice problem for you:
 
 Create a struct `Employee` and store the details of an employee in it. The details include the name, age, address, salary, and department of the employee. Create an array of structs and store the details of multiple employees in it. Print the details of each employee.
+
+<!-- add a toggle button to give the solution to the above problem -->
+
+<details>
+<summary>Solution</summary>
+
+```cpp
+
+struct Address {
+    string street;
+    string city;
+    string state;
+    int zipCode;
+};
+
+struct Employee {
+    string name;
+    int age;
+    Address address;
+    float salary;
+    string department;
+};
+
+int main() {
+    Employee e[3];
+    e[0].name = "John";
+    e[0].age = 21;
+    e[0].address.street = "123 Main St";
+    e[0].address.city = "New York";
+    e[0].address.state = "NY";
+    e[0].address.zipCode = 10001;
+
+    e[1].name = "Jane";
+    e[1].age = 20;
+    e[1].address.street = "456 Main St";
+    e[1].address.city = "New York";
+    e[1].address.state = "NY";
+    e[1].address.zipCode = 10001;
+
+    e[2].name = "Jack";
+    e[2].age = 22;
+    e[2].address.street = "789 Main St";
+    e[2].address.city = "New York";
+    e[2].address.state = "NY";
+    e[2].address.zipCode = 10001;
+
+    for (int i = 0; i < 3; i++) {
+        cout << e[i].name << endl;
+        cout << e[i].age << endl;
+        cout << e[i].address.street << endl;
+        cout << e[i].address.city << endl;
+        cout << e[i].address.state << endl;
+        cout << e[i].address.zipCode << endl;
+        cout << "----" << endl;
+    }
+}
+
+```
+
+</details>
+
+Isn't the code in the solution a bit repetitive? Can we make it more concise? Can we not use functions to make our code more modular and reusable? Yes, we can. We'll be covering functions in the upcoming sections and how we can use structs and functions together to make our code readable.
+
+## Summary
+
+- Structs are a way to group variables together to form a single data type.
+- Structs are public by default.
+- We can create an array of structs.
+- We can create a struct of structs.
+- We can create a struct of structs of structs and so on.
+- Structs are used to model real-world entities.
+
+
