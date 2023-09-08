@@ -5,6 +5,7 @@
   - [Declaring, Initializing and Accessing structs in the `main()` function.](#declaring-initializing-and-accessing-structs-in-the-main-function)
   - [Structs and Arrays](#structs-and-arrays)
   - [Struct of Structs - Say Hello to Nesting](#struct-of-structs---say-hello-to-nesting)
+  - [Practice Problems](#practice-problems)
 
 ## A gentle introduction to Structs
 
@@ -137,3 +138,9 @@ int main() {
 What about struct of structs of structs? Is that possible? Yes, it is. You can create a struct of structs of structs and so on. You can create as many levels of nesting as you want.
 
 Strictly in OOP terminology, you've studied something known as **composition**.
+
+## Practice Problems
+
+Here's a practice problem for you:
+
+Create a struct `Employee` and store the details of an employee in it. The details include the name, age, address, salary, and department of the employee. Create an array of structs and store the details of multiple employees in it. Print the details of each employee.
