@@ -93,8 +93,6 @@ void printPrimes(int N) {
 ```
 </details>
 
-Certainly! Here are additional practice questions on the specified topics, with their solutions provided in a collapsible markdown format.
-
 ## Additional Practice Questions
 
 ### Topic 1: 2D Arrays/Pointers
