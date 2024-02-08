@@ -23,8 +23,8 @@ Write a function to calculate the hourglass sum for every hourglass in `arr`, th
 <details>
 <summary>Solution</summary>
 
-```c
-#include <stdio.h>
+```cpp
+#include <iostream>
 #include <limits.h> // For INT_MIN
 
 #define ROW 6
@@ -54,8 +54,8 @@ Write a function `fibonacci` that takes an integer `n` as input and returns the 
 <details>
 <summary>Solution</summary>
 
-```c
-#include <stdio.h>
+```cpp
+#include <iostream>
 
 int fibonacci(int n) {
     if (n <= 1)
@@ -73,8 +73,8 @@ Write a program to print all prime numbers in the range 1 to N. Use loops effici
 <details>
 <summary>Solution</summary>
 
-```c
-#include <stdio.h>
+```cpp
+#include <iostream>
 
 void printPrimes(int N) {
     int i, j, isPrime;
@@ -87,7 +87,7 @@ void printPrimes(int N) {
             }
         }
         if (isPrime)
-            printf("%d ", i);
+            cout << i << " ";
     }
 }
 ```
@@ -105,8 +105,8 @@ Write a function that takes a square matrix (2D array) as input and returns the 
 <details>
 <summary>Solution</summary>
 
-```c
-#include <stdio.h>
+```cpp
+#include <iostream>
 
 int diagonalSum(int** matrix, int n) {
     int sum = 0;
@@ -130,8 +130,8 @@ Write a function `gcd` that takes two integers as input and returns their Greate
 <details>
 <summary>Solution</summary>
 
-```c
-#include <stdio.h>
+```cpp
+#include <iostream>
 
 int gcd(int a, int b) {
     if (b == 0)
@@ -149,8 +149,8 @@ Write a program that takes a positive integer and calculates the sum of its digi
 <details>
 <summary>Solution</summary>
 
-```c
-#include <stdio.h>
+```cpp
+#include <iostream>
 
 int sumOfDigits(int n) {
     int sum = 0;
@@ -177,15 +177,15 @@ Write a program to print the following pattern for a given number `n`. For `n=5`
 <details>
 <summary>Solution</summary>
 
-```c
+```cpp
 #include <stdio.h>
 
 void printPattern(int n) {
     for (int i = 1; i <= n; i++) {
         for (int j = 1; j <= i; j++) {
-            printf("* ");
+            cout << "* ";
         }
-        printf("\n");
+        cout << "\n";
     }
 }
 ```
