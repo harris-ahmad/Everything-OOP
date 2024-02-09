@@ -1,3 +1,12 @@
+
+- [Data Members and Member Functions](#data-members-and-member-functions)
+  - [What are the Data Types of Member Variables?](#what-are-the-data-types-of-member-variables)
+    - [Example: Defining a Student Class](#example-defining-a-student-class)
+  - [Objects of Other Classes as Data Members?](#objects-of-other-classes-as-data-members)
+    - [Example: Composition in Action](#example-composition-in-action)
+  - [Why Use Member Functions?](#why-use-member-functions)
+    - [Example: Implementing Member Functions](#example-implementing-member-functions)
+
 # Data Members and Member Functions
 
 In this chapter, we delve into the core of Object-Oriented Programming (OOP) in C++: data members and member functions. These elements are the building blocks of how we define and interact with objects in C++. By understanding these concepts, you'll be able to create more complex and efficient C++ programs.
