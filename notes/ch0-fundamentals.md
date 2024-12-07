@@ -10,6 +10,7 @@
     - [Composition](#composition)
     - [Interfaces](#interfaces)
   - [Practical Examples](#practical-examples)
+  - [References](#references)
 
 Object-Oriented (OO) Software Development has been a pivotal approach in software engineering, facilitating efficient, reusable, and maintainable code. Originating in the early 1960s and gaining widespread popularity in the 1990s, OO principles have become foundational in various programming languages, notably C++. The advent of the internet further underscored the utility of OO methodologies in developing web-based applications.
 
@@ -53,7 +54,7 @@ To solidify understanding, practical examples demonstrating these OO concepts wi
 
 ---
 
-# References
+## References
 
 - Gamma, E., Helm, R., Johnson, R., & Vlissides, J. (1994). *Design Patterns: Elements of Reusable Object-Oriented Software*. Addison-Wesley. This seminal book provides in-depth discussions on object-oriented design patterns and principles.
 - Meyer, B. (1997). *Object-Oriented Software Construction* (2nd ed.). Prentice Hall. Offers a comprehensive overview of object-oriented programming, including detailed explanations of key concepts and principles.
