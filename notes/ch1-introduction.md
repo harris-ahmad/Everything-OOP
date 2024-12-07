@@ -1,6 +1,6 @@
-# **Classes in C++ - The Blueprint of Awesomeness**
+# **Classes in C++**
 
-- [**Classes in C++ - The Blueprint of Awesomeness**](#classes-in-c---the-blueprint-of-awesomeness)
+- [**Classes in C++**](#classes-in-c)
   - [**What is a Class?**](#what-is-a-class)
     - [**Example: The `Person` Class**](#example-the-person-class)
   - [**Important Terminology**](#important-terminology)
