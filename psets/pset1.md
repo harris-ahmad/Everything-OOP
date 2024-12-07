@@ -3,8 +3,10 @@
 ## Topic 1: 2D Arrays/Pointers
 
 ### Question 1: Hourglass Sum
+
 Given a 6x6 2D Array, `arr`:
-```
+
+```txt
 1 1 1 0 0 0
 0 1 0 0 0 0
 1 1 1 0 0 0
@@ -12,12 +14,15 @@ Given a 6x6 2D Array, `arr`:
 0 0 0 2 0 0
 0 0 1 2 4 0
 ```
+
 An hourglass in `A` is a subset of values with indices falling in this pattern in `arr`'s graphical representation:
-```
+
+```txt
 a b c
   d
 e f g
 ```
+
 Write a function to calculate the hourglass sum for every hourglass in `arr`, then print the maximum hourglass sum.
 
 <details>
@@ -44,11 +49,13 @@ int findMaxHourglassSum(int arr[ROW][COL]) {
     return max_sum;
 }
 ```
+
 </details>
 
 ## Topic 2: Functions
 
 ### Question 2: Fibonacci Series
+
 Write a function `fibonacci` that takes an integer `n` as input and returns the `n`th Fibonacci number. Use recursion to solve this problem.
 
 <details>
@@ -63,11 +70,13 @@ int fibonacci(int n) {
     return fibonacci(n-1) + fibonacci(n-2);
 }
 ```
+
 </details>
 
 ## Topic 3: General Questions on Loops
 
 ### Question 3: Prime Numbers
+
 Write a program to print all prime numbers in the range 1 to N. Use loops efficiently.
 
 <details>
@@ -91,13 +100,15 @@ void printPrimes(int N) {
     }
 }
 ```
+
 </details>
 
 ## Additional Practice Questions
 
-### Topic 1: 2D Arrays/Pointers
+### 2D Arrays/Pointers
 
 #### Question 4: Matrix Diagonal Sum
+
 Write a function that takes a square matrix (2D array) as input and returns the sum of the two diagonals. For an odd-sized matrix, count the center element twice.
 
 <details>
@@ -118,11 +129,13 @@ int diagonalSum(int** matrix, int n) {
     return sum;
 }
 ```
+
 </details>
 
-### Topic 2: Functions
+### Functions
 
 #### Question 5: Greatest Common Divisor (GCD)
+
 Write a function `gcd` that takes two integers as input and returns their Greatest Common Divisor (GCD) using Euclid's algorithm.
 
 <details>
@@ -137,11 +150,13 @@ int gcd(int a, int b) {
     return gcd(b, a % b);
 }
 ```
+
 </details>
 
-### Topic 3: General Questions on Loops
+### General Questions on Loops
 
 #### Question 6: Sum of Digits
+
 Write a program that takes a positive integer and calculates the sum of its digits. Use a loop to solve this problem.
 
 <details>
@@ -159,12 +174,14 @@ int sumOfDigits(int n) {
     return sum;
 }
 ```
+
 </details>
 
 #### Question 7: Pattern Printing
+
 Write a program to print the following pattern for a given number `n`. For `n=5`, the pattern would be:
 
-```
+```txt
 *
 * *
 * * *
@@ -187,4 +204,5 @@ void printPattern(int n) {
     }
 }
 ```
+
 </details>
